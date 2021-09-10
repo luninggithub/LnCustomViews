@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <com.ln.custom.library.widget.round.RoundRelativeLayout
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <VideoView
+                    android:id="@+id/corner_video"
+                    android:layout_width="300dp"
+                    android:layout_height="180dp" />
+            </com.ln.custom.library.widget.round.RoundRelativeLayout>
+
+            <com.ln.custom.library.widget.round.RoundRelativeLayout
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:id="@+id/corner_img"
+                    android:src="@mipmap/pic_dog"
+                    android:scaleType="centerCrop"
+                    android:layout_width="300dp"
+                    android:layout_height="180dp" />
+            </com.ln.custom.library.widget.round.RoundRelativeLayout>
+
+            <com.ln.custom.library.widget.alpha.AlphaImageView
+                android:id="@+id/btn_img"
+                android:src="@mipmap/pic_dog"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_height="60dp" />
+
+            <com.ln.custom.library.widget.alpha.AlphaTextView
+                android:id="@+id/btn_txt"
+                android:layout_margin="10dp"
+                android:text="文本按钮"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.ln.custom.library.widget.alpha.AlphaRelativeLayout
+                android:id="@+id/btn_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/view_img"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/pic_dog"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp" />
+                <TextView
+                    android:layout_below="@id/view_img"
+                    android:layout_centerHorizontal="true"
+                    android:text="整体按钮"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </com.ln.custom.library.widget.alpha.AlphaRelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.ln.custom.library.widget.floating.FloatingAppButton
+        android:id="@+id/exit_app"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="10dp"
+        android:background="@mipmap/closed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
