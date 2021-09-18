@@ -7,9 +7,11 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
+import com.ln.custom.library.utils.ImageLoader;
 import com.ln.custom.library.widget.alpha.AlphaImageView;
 import com.ln.custom.library.widget.alpha.AlphaRelativeLayout;
 import com.ln.custom.library.widget.alpha.AlphaTextView;
@@ -61,5 +63,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ImageView transformImg = findViewById(R.id.img_transform);
+        ImageLoader.loadTransformImage(this, transformImg, "https://t7.baidu.com/it/u=1994210123,2038969757&fm=193&f=GIF");
     }
 }

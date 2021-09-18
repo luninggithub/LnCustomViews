@@ -12,7 +12,7 @@ import androidx.appcompat.widget.AppCompatImageView;
 /**
  * 可点击的ImageView，具有点击态效果
  *
- * created by luninggithub
+ * @author luninggithub
  */
 public class AlphaImageView extends AppCompatImageView {
 

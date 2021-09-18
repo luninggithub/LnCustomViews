@@ -16,7 +16,7 @@ import com.ln.custom.library.utils.ScreenUtil;
 /**
  * 可移动按钮、点击、吸边
  *
- * created by luninggithub
+ * @author luninggithub
  */
 public class FloatingAppButton extends AppCompatButton {
 

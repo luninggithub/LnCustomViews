@@ -10,7 +10,7 @@ import android.view.View;
  * 1，单击事件，用于响应button click
  * 2，滑动事件，用于处理button跟手滑动
  *
- * created by luninggithub
+ * @author luninggithub
  */
 public class FloatingButtonGestureDetector extends GestureDetector.SimpleOnGestureListener implements View.OnTouchListener {
 

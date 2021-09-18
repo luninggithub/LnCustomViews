@@ -13,7 +13,7 @@ import com.ln.custom.library.utils.ScreenUtil;
  * 一个可以把RelativeLayout裁剪成圆角的自定义RelativeLayout布局
  * 由于layout里面的子view同样会被裁剪，例如VideoView，ImageView等，很实用
  *
- * created by luninggithub
+ * @author luninggithub
  */
 public class RoundRelativeLayout extends RelativeLayout {
 
@@ -50,10 +50,6 @@ public class RoundRelativeLayout extends RelativeLayout {
      */
     private static class RoundViewOutlineProvider extends ViewOutlineProvider {
         private final int roundSize;
-
-        public RoundViewOutlineProvider() {
-            this(DEFAULT_ROUND_SIZE);
-        }
 
         public RoundViewOutlineProvider(int roundSize) {
             this.roundSize = roundSize;

@@ -3,9 +3,10 @@ package com.ln.custom.library.widget.floating;
 import android.view.MotionEvent;
 
 /**
- * created by luninggithub
  *
  * 用户屏幕交互动作回调,ExitButtonGestureDetector识别到指定行为后，回调通知监听器
+ *
+ * @author luninggithub
  */
 public interface IGestureActionListener {
 

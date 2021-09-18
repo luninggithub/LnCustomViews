@@ -12,7 +12,7 @@ import androidx.annotation.Nullable;
 /**
  * 可点击的RelativeLayout，具有点击态效果
  *
- * created by luninggithub
+ * @author luninggithub
  */
 public class AlphaRelativeLayout extends RelativeLayout {
 

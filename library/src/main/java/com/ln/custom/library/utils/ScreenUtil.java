@@ -8,7 +8,7 @@ import android.view.View;
 /**
  * 屏幕工具类
  *
- * created by luninggithub
+ * @author luninggithub
  */
 public class ScreenUtil {
 

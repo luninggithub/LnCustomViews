@@ -11,7 +11,7 @@ import androidx.appcompat.widget.AppCompatTextView;
 /**
  * 可点击的TextView，具有点击态效果
  *
- * created by luninggithub
+ * @author luninggithub
  */
 public class AlphaTextView extends AppCompatTextView {
 

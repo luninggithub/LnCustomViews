@@ -56,14 +56,20 @@
 
             <com.ln.custom.library.widget.alpha.AlphaRelativeLayout
                 android:id="@+id/btn_rl"
+                android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/view_img"
-                    android:layout_centerHorizontal="true"
                     android:src="@mipmap/pic_dog"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp" />
+                <ImageView
+                    android:id="@+id/img_transform"
+                    android:layout_toEndOf="@id/view_img"
+                    android:layout_marginStart="20dp"
                     android:layout_width="100dp"
-                    android:layout_height="60dp" />
+                    android:layout_height="100dp" />
                 <TextView
                     android:layout_below="@id/view_img"
                     android:layout_centerHorizontal="true"
@@ -74,7 +80,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
             </com.ln.custom.library.widget.alpha.AlphaRelativeLayout>
-
         </LinearLayout>
     </ScrollView>
 
